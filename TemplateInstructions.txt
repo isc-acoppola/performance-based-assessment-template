@@ -12,6 +12,7 @@ Editing this template:
     - Edit the heading of MySample.Empty so that it reflects the new folder name. MySample.Empty is an example of a class file that can be provided to the user when they start the assessment. If needed, make more of these files. If needed, add some starter code to these files.
 
     - Edit FrontEnd/index.html so there are as many q-container divs as there are questions, with the button ids matching the testNums on the server.
+    - Edit FrontEnd/index.html so that it has an appropriate title and good text displayed to the user for your use case.
 
     - Edit the StartUnitTest method of MySample/Dispatch.cls, so that there are as many conditionals as there are questions.
     - Edit the XYZSecretXYZ strings in the dispatch class, so that it provides the correct secret code words for each question. This class will be compiled in deployed mode which means it will not be visible to users.

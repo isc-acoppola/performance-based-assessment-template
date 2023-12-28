@@ -1,0 +1,139 @@
+/* CSS reset thanks to https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* End of CSS Reset */
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+#app h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #292B94 5%, #00AFAA);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+#app>*+* {
+    margin-top: 1.5rem;
+}
+
+#app .q-container {
+    width: min(53rem, 95vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 0.5rem
+}
+
+#app .q-container>* {
+    flex: 0 0 6rem;
+    font-size: 0.8rem;
+}
+
+#app .q-container .tests-container {
+    flex: 7 1 auto;
+}
+
+/* #app #q1-container button {
+color: white;
+border: 0px;
+border-radius: 10px;
+background-size: 200% auto;
+box-shadow: 0px 0px 14px -7px #f09819;
+background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+} */
+
+#app .q-container .status-field span {
+    padding: 0.2rem;
+}
+
+#app .q-container .secret-word-container span {
+    padding: 0.2rem;
+    border: 1px solid gold
+}
+
+.running {
+    background-color: yellow;
+    color: blue;
+}
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+.fail {
+    background-color: tomato;
+    color: white;
+}
+
+.q-container table {
+    border-collapse: collapse;
+}
+
+.q-container table td {
+    border: 1px solid rgb(177, 177, 177);
+    border-collapse: collapse;
+}
+
+.success-test {
+    background-color: green;
+    color: white;
+}
+
+.fail-test {
+    background-color: tomato;
+    color: white;
+}
